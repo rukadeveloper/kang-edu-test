@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   description: "강쌤 코딩 테스트",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
       className={`${barlowCondensed.variable} ${notoSansKR.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
+      <body className="w-full h-screen flex" suppressHydrationWarning>{children}</body>
     </html>
   );
 }
