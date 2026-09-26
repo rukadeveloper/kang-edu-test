@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.barlow_condensed {
+    font-family: var(--barlow-condensed)
+}
